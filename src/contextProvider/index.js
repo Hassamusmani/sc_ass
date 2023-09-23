@@ -49,11 +49,29 @@ const AppContextProvider = ({ children }) => {
     );
   };
 
+  const deleteMealHandler = (mealId) => {
+    setSelectedMeals((prevSelectedMeals) =>
+      prevSelectedMeals.filter((selectedMeal) => selectedMeal.id !== mealId)
+    );
+    setAllMeals((allMeals) =>
+      allMeals.map((category) => ({
+        ...category,
+        items: category.items.map((meal) => {
+          if (meal.id === mealId) {
+            return { ...meal, isSelected: false };
+          }
+          return meal;
+        }),
+      }))
+    );
+  };
+
   const contextValue = {
     allMeals,
     selectedMeals,
     mealSelectHandler,
     mealCategoryHandler,
+    deleteMealHandler,
   };
 
   return (

@@ -37,7 +37,7 @@ const RandomImage = () => {
     generateRandomImage();
   }, []);
 
-  return <img src={randomImage} alt="Meal" />;
+  return <img className="max-w-[72px] min-h-[72px] rounded-xl object-cover" src={randomImage} alt="Meal" />;
 };
 
 export default RandomImage;

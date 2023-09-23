@@ -5,10 +5,10 @@ import AllMealCollection from "./AllMealCollection";
 const AllMealsCard = () => {
   return (
     <>
-      <div>
+      <div className="border-b border-b-[#D3DBDA] bg-white w-full py-6">
         <AllMealsHeader />
       </div>
-      <div>
+      <div className="py-4 pl-14 pr-10 bg-white">
         <AllMealCollection />
       </div>
     </>

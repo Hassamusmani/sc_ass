@@ -19,30 +19,43 @@ const SelectedMealsCard = () => {
 
   return (
     <>
-      <header>
-        <img src={restaurant} alt="restaurant" />
-        <div>
-          <div>
-            <h1>Jawharat Esham Restaurent</h1>
-            <div>
-              <h6>4.7</h6>
-              Icon
+      <header className="flex flex-col items-center pb-10 border-b border-[#D3DBDA]">
+        <img className="mb-[19px]" src={restaurant} alt="restaurant" />
+        <div className="flex flex-col items-center">
+          <div className="flex items-center mb-3">
+            <h1 className="font-sans text-[18px] leading-6 tracking-normal text-center font-black text-[#040503] mr-5">
+              Jawharat Esham Restaurent
+            </h1>
+            <div className="flex text-[#79E003] font-bold">
+              <h6 className="text-xs mr-[3px]">4.7</h6>
+              <i class="fi fi-rr-star" style={{ fontSize: "x-small" }}></i>
             </div>
           </div>
-          <div>
-            <p>Wafi Mall, First Floor, Horus, Phase 5, Dubai</p>
-            Icon
+          <div className="flex mb-4 items-center">
+            <p className="font-sans text-sm leading-6 tracking-normal text-center text-[#040503] mr-5">
+              Wafi Mall, First Floor, Horus, Phase 5, Dubai
+            </p>
+            <div className="w-9 h-9 bg-black rounded-xl text-white flex items-center justify-center">
+              <i class="fi fi-rr-marker"></i>
+            </div>
           </div>
-          <Button classes="">Arabic Restaurant</Button>
+          <Button classes="bg-[#020A05] text-white min-w-[170px] font-3.5 px-[23px] py-[9px] rounded-md">
+            Arabic Restaurant
+          </Button>
         </div>
       </header>
-      {selectedMeals?.map((meal) => (
-        <MealItem key={meal.id} {...meal} />
-      ))}
-      <footer>
-        <div>
-          <p>
-            Total Price <span>AED {totalPrice}</span>
+      <div className="w-full">
+        {selectedMeals?.map((meal) => (
+          <MealItem key={meal.id} {...meal} />
+        ))}
+      </div>
+      <footer className="w-full">
+        <div className="flex pl-3 py-5">
+          <p className="text-sm text-[#2F3333A6]">
+            Total Price{" "}
+            <span className="text-lg text-[#020A05] font-bold">
+              AED {totalPrice}
+            </span>
           </p>
         </div>
       </footer>

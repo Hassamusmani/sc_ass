@@ -1,8 +1,8 @@
 export const MEALS_DATA = [
   {
     id: 0,
-    category: "Cold Apetizer",
-    isSelected: false,
+    category: "Cold Apetizers",
+    isSelected: true,
     items: [
       {
         id: 0,
@@ -35,7 +35,7 @@ export const MEALS_DATA = [
   },
   {
     id: 1,
-    category: "Hot Apetizer",
+    category: "Hot Apetizers",
     isSelected: false,
     items: [
       {
@@ -171,7 +171,7 @@ export const MEALS_DATA = [
   },
   {
     id: 5,
-    category: "Pizza",
+    category: "Plates on oven",
     isSelected: false,
     items: [
       {
