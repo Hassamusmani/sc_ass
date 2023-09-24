@@ -19,7 +19,7 @@ const SelectedMealsCard = () => {
 
   return (
     <>
-      <header className="flex flex-col items-center pb-10 border-b border-[#D3DBDA]">
+      <header className="flex flex-col items-center pb-10 border-b border-[#D3DBDA] bg-white">
         <img className="mb-[19px]" src={restaurant} alt="restaurant" />
         <div className="flex flex-col items-center">
           <div className="flex items-center mb-3">
@@ -49,7 +49,7 @@ const SelectedMealsCard = () => {
           <MealItem key={meal.id} {...meal} />
         ))}
       </div>
-      <footer className="w-full">
+      <footer className="w-full bg-white">
         <div className="flex pl-3 py-5">
           <p className="text-sm text-[#2F3333A6]">
             Total Price{" "}

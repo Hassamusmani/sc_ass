@@ -3,7 +3,7 @@ import MealItem from "../common/MealItem";
 
 const MealCategoryCard = ({ id, category, items }) => {
   return (
-    <div className="mx-3 mt-[60px]">
+    <div className={`mx-3 mt-[60px] cat_class`} id={`cat_${id}`}>
       <header className="flex justify-between items-center mb-2">
         <div className="flex align-middle">
           <h1 className="font-sans font-bold text-xl leading-6 tracking-normal text-center text-[#040503] mr-5">

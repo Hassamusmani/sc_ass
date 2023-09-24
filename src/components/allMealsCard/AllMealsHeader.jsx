@@ -42,8 +42,12 @@ const AllMealsHeader = () => {
   };
 
   useEffect(() => {
+    setActivePillId(allMeals.find((meal) => meal.isSelected).id);
+  }, [allMeals]);
+
+  useEffect(() => {
     if (activePillId) {
-      const activePillElement = document.getElementById(activePillId);
+      const activePillElement = document.getElementById(`pill_${activePillId}`);
       if (activePillElement) {
         const scrollableElement = scrollableDivRef.current;
         const targetScrollLeft = activePillElement.offsetLeft - 56;
@@ -68,7 +72,7 @@ const AllMealsHeader = () => {
       >
         {allMeals?.map(({ id, category, isSelected }, index) => (
           <div
-            id={id}
+            id={`pill_${id}`}
             className={`${index === 0 ? "pl-14" : ""} ${
               index === allMeals.length - 1 ? "pr-14" : ""
             }`}
@@ -78,7 +82,6 @@ const AllMealsHeader = () => {
               text={category}
               clickHandler={() => {
                 mealCategoryHandler(id);
-                setActivePillId(id);
               }}
               isActive={isSelected}
             />
