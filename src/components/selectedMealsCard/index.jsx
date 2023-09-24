@@ -44,7 +44,7 @@ const SelectedMealsCard = () => {
           </Button>
         </div>
       </header>
-      <div className="w-full">
+      <div className="w-full max-h-60 overflow-y-auto scroll_hidden">
         {selectedMeals?.map((meal) => (
           <MealItem key={meal.id} {...meal} />
         ))}

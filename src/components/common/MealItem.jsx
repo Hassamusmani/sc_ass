@@ -29,7 +29,7 @@ const MealItem = ({
     <div
       className={`flex items-center border-b border-[#D3DBDA] px-3 py-3.5 cursor-pointer select-none mb-1 ${
         isSelected && large ? "isActive_meal" : ""
-      }`}
+      } ${large ? "" : "bg-white"}`}
     >
       <div className="mr-3">
         <RandomImage />
