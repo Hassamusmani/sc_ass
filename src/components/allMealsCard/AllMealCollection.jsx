@@ -31,7 +31,7 @@ const AllMealCollection = () => {
   };
 
   useEffect(() => {
-    scrollToSelectedCategory(allMeals, scrollableDivRef);
+    // scrollToSelectedCategory(allMeals, scrollableDivRef);
   }, [allMeals]);
 
   useEffect(() => {
