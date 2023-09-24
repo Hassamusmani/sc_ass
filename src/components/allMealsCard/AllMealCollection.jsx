@@ -31,6 +31,7 @@ const AllMealCollection = () => {
   };
 
   useEffect(() => {
+    // minor issue here
     // scrollToSelectedCategory(allMeals, scrollableDivRef);
   }, [allMeals]);
 
