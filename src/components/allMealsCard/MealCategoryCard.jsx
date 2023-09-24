@@ -6,7 +6,7 @@ const MealCategoryCard = ({ id, category, items }) => {
     <div className={`mx-3 mt-[60px] cat_class`} id={`cat_${id}`}>
       <header className="flex justify-between items-center mb-2">
         <div className="flex align-middle">
-          <h1 className="font-sans font-bold text-xl leading-6 tracking-normal text-center text-[#040503] mr-5">
+          <h1 className="font-sans font-extrabold text-xl leading-6 tracking-normal text-center text-[#040503] mr-5">
             {category}
           </h1>
           <span className="w-7 h-7 bg-black text-center rounded-full leading-5">

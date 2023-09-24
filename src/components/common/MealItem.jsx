@@ -37,7 +37,7 @@ const MealItem = ({
       <div className="flex items-center justify-between w-full">
         <div className="flex items-start flex-col">
           <h3
-            className={`font-sans text-lg leading-[21px] tracking-normal text-center font-black mb-2 ${
+            className={`font-sans text-lg leading-[21px] tracking-normal text-center font-bold mb-2 ${
               large ? "text-[#040503]" : "text-[#410deb]"
             }`}
           >
@@ -100,7 +100,7 @@ const MealItem = ({
         <MealModal
           meal={selectedMeal}
           onClose={closeModal}
-          onAddMeal={(mealId) => {
+          onAddMeal={() => {
             mealSelectHandler(mealId, id);
           }}
         />

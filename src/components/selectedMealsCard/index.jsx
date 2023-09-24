@@ -23,7 +23,7 @@ const SelectedMealsCard = () => {
         <img className="mb-[19px]" src={restaurant} alt="restaurant" />
         <div className="flex flex-col items-center">
           <div className="flex items-center mb-3">
-            <h1 className="font-sans text-[18px] leading-6 tracking-normal text-center font-black text-[#040503] mr-5">
+            <h1 className="font-sans text-[18px] leading-6 tracking-normal text-center font-extrabold text-[#040503] mr-5">
               Jawharat Esham Restaurent
             </h1>
             <div className="flex text-[#79E003] font-bold">
@@ -39,7 +39,7 @@ const SelectedMealsCard = () => {
               <i class="fi fi-rr-marker"></i>
             </div>
           </div>
-          <Button classes="bg-[#020A05] text-white min-w-[170px] font-3.5 px-[23px] py-[9px] rounded-md">
+          <Button classes="bg-[#020A05] text-white min-w-[170px] font-3.5 px-[23px] py-[9px] rounded-md hover:text-[#020A05] hover:bg-[#ffffff] border-[#fff] hover:border-[#020A05] border-2">
             Arabic Restaurant
           </Button>
         </div>
